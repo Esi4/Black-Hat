@@ -27,11 +27,11 @@ public class Data {
     }
 
     private boolean isValidPhoneNumber(String phoneNumber) {
-        return phoneNumber.matches("\\+\\d{11,}");
+        return phoneNumber.matches("\\d{11,}");
     }
 
     private boolean isValidName(String name) {
-        return name != null && name.length() <= 20;
+        return name != null && name.length() <= 42;
     }
 
     public Map<String, String> getAllEntries() {

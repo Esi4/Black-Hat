@@ -7,7 +7,7 @@ public class Main {
         Data phoneBook = new Data();
         Random random = new Random();
 
-        int totalEntries = 30000000;
+        int totalEntries = 18758328;
 
         for (int i = 0; i < totalEntries; i++) {
             String phoneNumber = generateRandomPhoneNumber(random);
@@ -22,7 +22,7 @@ public class Main {
     private static String generateRandomName(Random random) {
         String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
         StringBuilder name = new StringBuilder();
-        int nameLength = random.nextInt(41) + 2; // Имя от 1 до 20 символов
+        int nameLength = random.nextInt(40) + 2; // Имя от 1 до 20 символов
         for (int i = 0; i < nameLength; i++) {
             name.append(characters.charAt(random.nextInt(characters.length())));
         }
@@ -30,7 +30,7 @@ public class Main {
     }
 
     private static String generateRandomPhoneNumber(Random random) {
-        StringBuilder phoneNumber = new StringBuilder("+");
+        StringBuilder phoneNumber = new StringBuilder();
         for (int i = 0; i < 11; i++) {
             phoneNumber.append(random.nextInt(10));
         }
