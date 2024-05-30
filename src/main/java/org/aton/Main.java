@@ -4,7 +4,8 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        Data phoneBook = new Data();
+        DataHashMap dataHashMap = new DataHashMap();
+        DataTreeMap dataTreeMap = new DataTreeMap();
         Random random = new Random();
 
         int totalEntries = 18758328;
@@ -12,11 +13,12 @@ public class Main {
         for (int i = 0; i < totalEntries; i++) {
             String phoneNumber = generateRandomPhoneNumber(random);
             String name = generateRandomName(random);
-            phoneBook.addEntry(phoneNumber, name);
+            //dataHashMap.addEntry(phoneNumber, name);
+            dataTreeMap.addEntry(phoneNumber, name);
             System.out.println(i);
         }
 
-        System.out.println("Total entries added: " + phoneBook.getAllEntries().size());
+        System.out.println("Total entries added: " + dataTreeMap.getAllEntries().size());
     }
 
     private static String generateRandomName(Random random) {

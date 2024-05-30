@@ -2,12 +2,13 @@ package org.aton;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
-public class Data {
+public class DataTreeMap {
     private final Map<String, String> ordersList;
 
-    public Data() {
-        ordersList = new HashMap<>();
+    public DataTreeMap() {
+        ordersList = new TreeMap<>();
     }
 
     public void addEntry(String phoneNumber, String name) {
