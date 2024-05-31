@@ -75,5 +75,3 @@
 Рис.  1.3 Результат TreeMap 
 
 Время, затраченное на выполнение программы также увеличилось на 30%. 
-
-Репозиторий проекта:[ https://github.com/Esi4/Black-Hat/tree/master ](https://github.com/Esi4/Black-Hat/tree/master) 
